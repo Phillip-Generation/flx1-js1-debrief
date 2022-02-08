@@ -2,9 +2,9 @@
 
 // 1. GenBuzz 
 
-const myNumber = 10;
-let modThree = false;
-let modFive = false;
+var myNumber = prompt("Please enter a whole number");
+myNumber = parseInt(myNumber);
+
 // Check myNumber is type Number
 if (typeof myNumber !== 'number') {
   console.log('This is not a number');
@@ -12,18 +12,17 @@ if (typeof myNumber !== 'number') {
 // Check myNumber factor 3
 else if (myNumber % 3 == 0) {
   console.log('Gen');
-  modThree = true;
+  let modThree = true;
 }
 // Check myNumber factor 5
 else if (myNumber % 5 == 0) {
   console.log('Buzz');
-  modFive = true;
+  let modFive = true;
 }
 // Check myNumber factors of 3 and 5 
 else if (typeof myNumber == 'number' && modThree && modFive) {
   console.log('GenBuzz');
-  modThree = true;
-  modFive = true;
+
 }
 // Print myNumber if not either factor 3 or 5 
 else
@@ -31,13 +30,16 @@ else
 
 //Use a swtich statement to print the price of the each item in the store to the console.
 
-  const expr = 'Shoes';
-  switch (expr) {
+var inventoryItem = prompt("Check inventory Items: Shoes, Jeans, Hat, or Socks");
+
+
+  switch (inventoryItem) {
     case 'Shoes':
       console.log('Shoes are $50');
       break;
     case 'Jeans':
       console.log('Jeans are $25');
+      break;
     case 'Hat':
       console.log('Hats are $12');
       break;
@@ -46,7 +48,7 @@ else
       break;
       // expected output: "Shoes are $50"
     default:
-      console.log(`Invalid item: ${expr}.`);
+      console.log(`Invalid item: ${inventoryItem}.`);
   }
   
 
