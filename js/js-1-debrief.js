@@ -54,4 +54,4 @@ else
 let min = 50;
 let max = 100;
 
-console.log(Math.floor(Math.random() * (max -min) + min));
+console.log(Math.floor(Math.random() * (max - min) + min));
