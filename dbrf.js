@@ -1,9 +1,9 @@
 //GenBuzz
-let myNumber = '9';
+let myNumber = Math.floor(Math.random()*30);
 console.log(typeof myNumber);
-myNumber!=='number'??console.log('this is not a number');
+typeof myNumber!=='number'?console.log('this is not a number'):console.log(myNumber);
 
-myNumber =9;
+myNumber = Math.floor(Math.random()*30);
 if(myNumber%3===0&&myNumber%5===0){
     console.log('GenBuzz');
 }else if(myNumber%5===0){
